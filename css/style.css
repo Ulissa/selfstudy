@@ -1,8 +1,12 @@
-body, h1, h2, h3, h4, p, a {
-  margin: 0;
-  font-size: 100%;
-  font-weight: normal;
+.navbar a {
+  float: center;
+  display: inline-flexbox;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
 
 * {
   box-sizing: border-box;
@@ -10,25 +14,37 @@ body, h1, h2, h3, h4, p, a {
 
 body {
   font-family: 'Inter', sans-serif;
+  background-size: 100%;
+  
+  background-repeat: no-repeat;
 }
 
+
 .header {
-  height: 100vh;
+  
   background-color: #eee;
-  background-image: url(evgeniy-sholokh-5Xf2hLm6yj8-unsplash.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
+  background-size: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-image: url(https://images.unsplash.com/photo-1602777940401-b62761f9cac7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80); 
 }
 
 .header-title {
-  font-size: 140px;
-  color: white;
+  font-size: 80px;
+  color:#fcf6f8 ;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 300;
   margin: auto;
-}
+  padding-left: 20%;
+  padding-right: 20%;
 
+  width: 100%;
+  height: 100%;
+ display: flex;
+}
 .overlay {
   width: 100%;
   height: 100%;
@@ -45,16 +61,20 @@ body {
 .card{
   width:350px;
   margin-bottom: 60px;
-  padding: 45px 45px 70px;
-  display: inline-block;
-  margin-right: 90px;
+  padding: 3px;
+  display: inline;
+  margin-right: 5px;
   box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+  size: 0.3;
+  flex: 1;
 }
 
-.no-right-margin {
-  margin-right: 0;
-}
 
+@media (min-width: 992px) {
+  .card-columns {
+      -webkit-column-count: 4;
+      column-count: 4
+  }
 .card-title{
   font-size: 24px;
   font-weight: 500;
@@ -62,22 +82,30 @@ body {
 }
 
 .card-text{
-  font-size: 16px;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: fantasy;
+  text-align: inherit;
+  margin-top: 7px 7px 7px 0;
+  float:inherit;
 }
 
 .card-image{
-  width: 100%;
-  margin-bottom: 25px;
+  width: 240px;
+  shape-image-threshold: 0.5;
+margin-bottom: 25px;
+float: inline-start ;
 }
-
+ 
+   }
 .footer {
-  height: 300px;
-  background-color: #000;
+  height: 100%;
+  background-color: rgb(23, 1, 29);
   display: flex;
 }
 
 .footer-author {
-  color: #FFFFFF;
-  font-size: 24px;
+  color: #fff;
+  font-size: 14px;
   margin: auto;
 }
